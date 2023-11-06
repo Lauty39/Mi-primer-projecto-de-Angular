@@ -1,0 +1,120 @@
+<script>
+  alert("Bienvenido al Mundo de la Cocina");       
+</script>
+
+    <h1 id="titulo"><u>LA COCINA ES MI PASION</u></h1>
+    <h2 id="InfoReferencia"><u>Informacion de la Empresa</u></h2>
+    <h2 id="Tope"><u>Indice</u></h2>
+    <p><a href="#Instrucciones Educativas">Intrucciones Educativas</a></p>
+    <p><a href="#Nuestro Servicio">Nuestro Servicio</a></p>
+    <p><a href="#Normas de Sanidad">Normas de Sanidad</a></p>
+    <p><a href="#Nuestra Gente">Nuestra Gente</a></p> 
+    <p><a href="#Formulario">Formulario</a></p>
+    <table border="2">
+
+      <tr>
+        <th>Nuestros Productos</th>
+        <th>Descripcion</th>
+    </tr>
+    <tr>
+        <td>Producto1</td>
+        <td>informacion</td>
+    </tr>
+    <tr>
+        <td>producto2</td>
+        <td>informacion</td>
+    </tr>
+    <tr>
+        <td>producto3</td>
+        <td>informacion</td>
+
+    </tr>
+</table> 
+<h3 id="Instrucciones Educativas"><u><b>Instrucciones Educativas</b></u></h3>
+<p>La correcta alimentación y nutrición en edades escolares es
+    vital para un crecimiento óptimo y buen desarrollo cerebral. Por eso,
+    ofrecemos preparaciones saludables y equilibradas tanto para
+    alumnos como docentes y administrativos.
+    En cada bufete contamos con la supervisión de un Lic. En Nutrición
+    que supervisa la elaboración, y además realiza Educación Alimentaria
+    Nutricional (EAN) destinada a toda la comunidad. Ésta es nuestra
+    manera de compartir la importancia de una buena alimentación en
+    cada grupo etario.</p>
+    <br>
+    <br>
+
+<h3 id="Nuestro Servicio"><u>Nuestro Servicio</u></h3>
+<p>Contamos con:
+    Estructura operativa que proporciona rápidas respuestas a nuestros clientes frente a sus necesidades.
+    Plantel administrativo y operativo que cuenta con las herramientas necesarias para satisfacer todas las demandas de los clientes.
+    Organización y planificación de menúes: cada menú cuenta con el planeamiento y control de nuestro equipo conformado por Lic. En Nutrición, cocineros, supervisores y gerencia. Contamos con menúes adaptados para cada necesidad.
+    Organización y planificación de la logística.
+    Recurso humano con el perfil y los conocimientos necesarios para la atención de cada comensal.</p>
+    <br>
+    <br>
+
+<h3 id="Normas de Sanidad"><U>Normas de sanidad</U></h3>
+<p>Implementamos un Sistema de Gestión de Calidad (SGC) que se
+    cumple satisfactoriamente para lograr productos inocuos, sin perder la calidad
+    y aporte nutricional que nos caracterizan.
+    El mismo nos permite realizar trazabilidad del producto durante toda la
+    cadena de recepción, elaboración y distribución del plato final.
+    Cada uno de nuestros servicios cuenta con:
+    i. Sistema integrado y estandarizado de gestión de calidad e inocuidad
+    alimentaria.
+    ii. Auditorías internas constantes, para monitoreo y control de los
+    estándares de calidad.
+    iii. Capacitaciones de nuestro personal sobre Calidad e Higiene
+    Alimentaria.
+    iv. Análisis de los productos elaborados a través de laboratorios
+    externos.
+    v. Seguimiento de los equipos de frío y su correcto funcionamiento.</p>
+    <br>
+    <br>
+    
+    <h3 id="Nuestra Gente"><u>Nuestra Gente</u></h3>
+    <p>La base de nuestro éxito es nuestra gente. La selección del personal que ingresa a la empresa la realizamos exhaustivamente, analizando su capacidad profesional, medio de desarrollo, ambiente familiar y potencial de crecimiento.
+     <br>
+     <br>
+     <br>
+     <h3>A continuacion te mostraremos un video motivador</h3>
+     <iframe width="500" height="400" src="https://www.youtube.com/embed/--MdohXec7M?start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <p id="Formulario">Si te interesa formar parte de nuestro equipo completa tus datos:</p>
+        <form action="">
+            <p><label for="Nombre">Nombre <br><input type="text"></label></p>
+            <p><label for="Apellido">Apellido<br><input type="text"></label></p>
+            <p>Sexo
+                <br>
+                <input type="radio" name="sexo" value="Varon" checked> Hombre
+                <br>
+                <input type="radio" name="sexo" value="Hembra"> Mujer
+                <br>
+                <br></p>
+                <p><label for="Telefono">Telefono<br><input type="tel"></label></p>
+            <p id="Localidad"><label for="Localidad">Localidad<br><input type="text"></label></p>
+            <select name="" id="Localidad">
+                <option value=""></option>
+                <option value="Pila">Pila</option>
+                <option value="Dolores">Dolores</option>
+                <option value="Chascomus">Chascomus</option>
+                <option value="Castelli">Castelli</option>
+                <option value="Lezama">Lezama</option>
+            </select>
+            <p><label for="Email">Email <br><input type="email"></label></p>
+
+            <h4>Comentarios sobre nuestros cursos</h4>
+            <textarea cols="30" rows="7" name="comentarios"></textarea>
+            <br>
+            <h4>Deseo recibir notificación de las novedades sobre los cursos de cocina.</h4>
+            <input type="checkbox" name="recibir_info" checked>
+            <br>
+            
+            <p *ngIf="enviar">El formulario se cargo correctamente</p>
+            <button (click)="onClickEnviar()">Enviar</button>
+            <script *ngIf="enviar" type="text/javascript">
+                function alertar(texto) {
+                   alert(texto);
+                }
+            </script>
+        </form>

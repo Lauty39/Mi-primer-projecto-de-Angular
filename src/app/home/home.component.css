@@ -1,0 +1,17 @@
+#home{
+    position: relative;
+}
+#titulo{
+    
+    color: rgb(65, 223, 26);
+    text-align: justify, center;
+}
+
+#InfoReferencia {
+    color:navajowhite;
+    text-align: justify,left
+}
+#tope{
+    color:navajowhite;
+    text-align: justify,left
+}
